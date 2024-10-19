@@ -4,29 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Document</title>
-    <script src="index.js" defer></script>
+    <title>Currency Converter</title>
   </head>
   <body>
     <section>
       <form>
         <fieldset>
-          <legend>Oona currency converter</legend>
-          <label>
-            From
-            <select name="from"></select>
-          </label>
+          <legend>Oona currency Converter</legend>
+          <div>
+            <label>
+              From
+              <select name="from">
+                <option value="btc">Bitcoin (BTC)</option>
+                <option value="eth">Ethereum (ETH)</option>
+                <option value="usd">US Dollar (USD)</option>
+              </select>
+            </label>
+          </div>
 
-          <label>
-            TO
-            <select name="to"></select>
-          </label>
+          <div>
+            <label>
+              To
+              <select name="to">
+                <option value="eth">Ethereum (ETH)</option>
+                <option value="btc">Bitcoin (BTC)</option>
+                <option value="usd">US Dollar (USD)</option>
+              </select>
+            </label>
+          </div>
 
-          <input type="text" name="rate" disabled value="1 BTC = 5 ETH" />
+          <div>
+            <input type="text" name="rate" disabled value="1 BTC = 5 ETH" />
+          </div>
 
-          <button>Convert</button>
+          <div>
+            <button type="submit">Convert</button>
+          </div>
         </fieldset>
       </form>
     </section>
-  </body>
+
+</div>
+<footer> OONA &copy 2024</footer>
+</div>
+<script src="index.js"></script>
+</body>
 </html>

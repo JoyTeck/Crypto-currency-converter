@@ -1,55 +1,68 @@
-* {
-  padding: 0;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-form {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-fieldset {
-  border: none;
-  border-radius: 10px;
-  background-color: whitesmoke;
-  box-shadow: 0 0 2px gray;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
   padding: 20px;
 }
 
-legend {
-  font-weight: 600;
+header {
+  background: #007bff;
+  color: #ffffff;
+  padding: 20px;
   text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 16px;
-}
-label {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-select {
-  padding: 8px 10px;
   border-radius: 8px;
-  background-color: white;
-  border: 1px solid lightblue;
 }
 
+section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: black;
+}
+
+form {
+  margin-top: 15px;
+}
+
+fieldset {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: black;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select,
 input {
-  padding: 8px 10px;
-  border: 1px solid rgb(218, 217, 217);
-  background-color: rgba(211, 211, 211, 0.781);
+  padding: 10px;
+  margin-top: 5px;
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
 }
 
 button {
-  padding: 8px 10px;
-  background-color: rgb(75, 3, 59);
+  background-color: rgb(66, 2, 13);
   color: white;
   border: none;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(66, 2, 13);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: black;
 }
